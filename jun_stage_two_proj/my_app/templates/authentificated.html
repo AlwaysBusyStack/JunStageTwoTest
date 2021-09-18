@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <style>
+        a {
+            text-decoration: none;
+        }
+        .btn-container {
+            display: flex;
+            justify-content: space-between;
+            width: 400px;
+        }
+
+        .btn-container a {
+            width: 100px;
+            background-color: darkgray;
+            border-radius: 4px;
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+<h1>Привет {{ name }} </h1>
+<div class="btn-container">
+    <a href="logout/">Logout</a>
+</div>
+<p style="text-align: center">
+    <img src="{% static 'hello.jpg' %}" alt="" style="margin: 0 auto">
+</p>
+</body>
+</html>

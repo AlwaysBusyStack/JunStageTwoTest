@@ -1,0 +1,5 @@
+/venv/
+/.idea/
+/jun_stage_two_proj/db.sqlite3
+*migrations/
+*__pycache__/
